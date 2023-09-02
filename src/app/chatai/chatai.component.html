@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<body>
+    <div class="aboutreturn">
+        <p [innerHTML]="personChat"></p>
+        <p [innerHTML]="chat"></p>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="what can I help you" [(ngModel)]="inputChat">
+        <span class="sendicon">
+            <i class="fas fa-paper-plane" (click)="sharedChat()"></i>
+        </span>
+    </div>
+</body>
+
+<app-footer></app-footer>

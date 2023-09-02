@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<h1>Start make your Linkedin Profile Amazing</h1>
+
+
+<div class="body">
+    <div class="headline">
+        <p>Headline*</p>
+        <div class="headlineinput">
+            <input type="text" placeholder="Headline" [(ngModel)]="headline">
+            <span class="sendicon">
+                <i class="fas fa-paper-plane" (click)="sharedHeadline()"></i>
+            </span>
+        </div>
+        <div class="headlinereturn">
+            <p>{{UpdateHeadline}} </p>
+            <button (click)="copyText($event, 'UpdateHeadline')" class="copy-button">{{ isCopied('UpdateHeadline') ? 'Copied' : 'Copy'}}</button>
+        </div>
+    </div>
+    
+    <div class="about">
+        <p>About*</p>
+        <div class="aboutinput">
+            <input type="text" placeholder="about" [(ngModel)]="about">
+            <span class="sendicon" >
+                <i class="fas fa-paper-plane" (click)="sharedAbout()"></i>
+            </span>
+        </div>
+        <div class="aboutreturn">
+            <p> {{ UpdateAbout}}</p>
+            <button (click)="copyText($event, 'UpdateAbout')" class="copy-button">{{ isCopied('UpdateAbout') ? 'Copied' : 'Copy'}}</button>
+        </div>
+    </div>
+    
+    <div class="expirence">
+        <p>Expirence Description*</p>
+        <div class="descriptioninput">
+            <input type="text" placeholder="Description" [(ngModel)]="expirence">
+            <span class="sendicon">
+                <i class="fas fa-paper-plane" (click)="sharedExpirence()"></i>
+            </span>
+        </div>
+        <div class="expirencereturn">
+            <p>{{UpdateExpirence}} </p>
+            <button (click)="copyText($event, 'UpdateExpirence')" class="copy-button">{{ isCopied('UpdateExpirence') ? 'Copied' : 'Copy'}}</button>
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>
+

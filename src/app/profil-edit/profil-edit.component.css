@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+
+    color: black;
+    margin: 0;
+}
+.body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headline,
+.about,
+.expirence {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.headlineinput,
+.aboutinput,
+.descriptioninput {
+    margin-bottom: 5px;
+    position: relative;
+    padding: 10px;
+}
+
+.sendicon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.sendicon i {
+    color: #007bff;
+    font-size: 18px;
+}
+
+.headlinereturn,
+.aboutreturn,
+.expirencereturn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #0069d9;
+}
